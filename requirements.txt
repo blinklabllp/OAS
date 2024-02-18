@@ -2,7 +2,8 @@ django==5.0.1
 gunicorn
 python-dotenv
 whitenoise
-django-admin-soft-dashboard==1.0.11
+django-admin-soft-dashboard==1.0.12
+fontawesomefree==6.5.1
 
 # psycopg2-binary
 # mysqlclient

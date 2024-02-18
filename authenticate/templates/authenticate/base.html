@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../static/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../static/img/favicon.png">
+  <title>
+    Soft UI Dashboard by Creative Tim
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="../static/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../static/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="../static/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../static/css/soft-ui-dashboard.css" rel="stylesheet" />
+</head>
+
+<body class="g-sidenav-show bg-gray-100">
+  <div class="container position-sticky z-index-sticky top-0">
+    <div class="row">
+      <div class="col-12">
+        <!-- Navbar Dark -->
+        <nav class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+          <div class="container-fluid pe-0">
+            <h3><a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="#" rel="tooltip" title="Designed and Managed by Wizart" data-placement="bottom" target="_blank">
+              Online Art System
+            </a></h3>
+            <button class="navbar-toggler shadow-none ms-2" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon mt-2">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar1"></span>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigation">
+              <ul class="navbar-nav mx-auto ms-xl-auto me-xl-7">
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="#">
+                  <i class="fa fa-chart-pie opacity-6 text-dark me-1" aria-hidden="true"></i>
+                  LINK 1
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="#">
+                  <i class="fa fa-chart-pie opacity-6 text-dark me-1" aria-hidden="true"></i>
+                  LINK 2
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="#">
+                  <i class="fa fa-chart-pie opacity-6 text-dark me-1" aria-hidden="true"></i>
+                  LINK 3
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+    </div>
+  </div>
+
+
+    {% block content %}
+       {% if messages %}
+            <div class="alert alert-danger" role="alert">
+              <ul>
+                  {% for message in messages %}
+                      <li>{{ message }}</li>
+                  {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+    {% endblock %}
+  <!--   Core JS Files   -->
+  <script src="../static/js/core/popper.min.js"></script>
+  <script src="../static/js/core/bootstrap.min.js"></script>
+
+  <!-- Plugin for the charts, full documentation here: https://www.chartjs.org/ -->
+  <script src="../static/js/plugins/chartjs.min.js"></script>
+  <script src="../static/js/plugins/Chart.extension.js"></script>
+
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../static/js/soft-ui-dashboard.min.js"></script>
+</body>
+
+</html>

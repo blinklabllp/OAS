@@ -38,6 +38,8 @@ if RENDER_EXTERNAL_HOSTNAME:
 
 # Application definition
 
+# ToDo: Remove home at a later date.
+
 INSTALLED_APPS = [
     'admin_soft.apps.AdminSoftDashboardConfig',
     "django.contrib.admin",
@@ -48,6 +50,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "home",
+    "authenticate",
+    "public",
 ]
 
 MIDDLEWARE = [
@@ -160,3 +164,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 LOGIN_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+AUTH_USER_MODEL = 'authenticate.ClientPrimaryUser'
